@@ -1,0 +1,46 @@
+choice = input("""Choose your choice :
+1.A - NUMBER OF LETTERS IN TEXT
+2.B - SORTED BY ALPHABET
+Your choice is : """)
+
+
+def countstr(leter):
+    d = {}
+    for w in leter:
+        d[w] = leter.count(w)
+    for k in sorted(d):
+        print(k + ":" + str(d[k]))
+
+
+while choice == "A":
+    print("You picked option 'A' (count the number of each letter in the text)")
+    qwe = (input("""INPUT YOUR TEXT :
+    """))
+    countstr(qwe)
+    print("Program is completed")
+    print("CONTINUE - 1")
+    print("EXIT - 2")
+    choice2 =  input("YOUR OPTION : ")
+    if choice2 =="2":
+        break
+    if choice2 == "1":
+        choice == "A"
+    else: print("Incorrect option")
+    choice = 45
+while choice == "B":
+    print("You picked option 'B' (sort words according to vocabulary)")
+    qwe = input("""INPUT YOUR TEXT :
+    """)
+    qwe = qwe.split()
+    qwe = sorted(qwe)
+    print(qwe)
+    print("Program is completed")
+    print("CONTINUE - 1")
+    print("EXIT - 2")
+    choice3 =  input("YOUR OPTION : ")
+    if choice3 =="2":
+        break
+    if choice3 == "1":
+        choice == "B"
+    else: print("Uncorrect option")
+    choice = 3

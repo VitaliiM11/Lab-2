@@ -3,14 +3,12 @@ choice = input("""Choose your choice :
 2.B - SORTED BY ALPHABET
 Your choice is : """)
 
-
-def countstr(leter):
+def countstr(letter):
     d = {}
-    for w in leter:
-        d[w] = leter.count(w)
+    for w in letter:
+        d[w] = letter.count(w)
     for k in sorted(d):
         print(k + ":" + str(d[k]))
-
 
 while choice == "A":
     print("You picked option 'A' (count the number of each letter in the text)")

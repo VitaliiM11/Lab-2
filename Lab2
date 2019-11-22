@@ -49,4 +49,4 @@ while choice == "B":
         break
     if choice3 == "1":
         choice == "B"
-    else: print("Uncorrect option")
+    else: print("Incorrect option")
